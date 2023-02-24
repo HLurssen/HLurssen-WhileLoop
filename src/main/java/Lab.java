@@ -25,7 +25,7 @@ public class Lab {
      * I also recommend adding a line such as System.out.println(sum); and System.out.println(i);, or using your IDE's
      * debugger tool, to help you understand what is really happening when the loop is running.
      *
-     * If you program doesn't stop running, that means the condition you defined is never broken as the code executes.
+     * If your program doesn't stop running, that means the condition you defined is never broken as the code executes.
      * This could either be a result of a mistake in writing the condition i < end or in writing the line i = i + 1;
      *
      * @param end a number representing the number to which the sum of all numbers starting from 0 should be calculated
@@ -36,7 +36,10 @@ public class Lab {
         int sum = 0;
         int i = 0;
 
-//        code here
+        while (i < end) {
+            sum = sum +i;
+            i = i + 1;
+        }
 
         return sum;
     }
